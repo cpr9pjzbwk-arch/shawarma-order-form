@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ шаурмы</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+        h1 { color: #d32f2f; text-align: center; }
+        form { background: #f9f9f9; padding: 20px; border-radius: 10px; }
+        label { display: block; margin: 10px 0 5px; }
+        input, select, textarea { width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 5px; }
+        button { background: #d32f2f; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
+        button:hover { background: #b71c1c; }
+    </style>
+</head>
+<body>
+    <h1>🍖 Заказ шаурмы</h1>
+    <form action="#" method="POST">
+        <label>Ваше имя:</label>
+        <input type="text" name="name" required>
+        
+        <label>Телефон:</label>
+        <input type="tel" name="phone" required>
+        
+        <label>Адрес доставки:</label>
+        <input type="text" name="address" required>
+        
+        <label>Тип шаурмы:</label>
+        <select name="type" required>
+            <option value="куриная">Куриная</option>
+            <option value="говяжья">Говяжья</option>
+            <option value="свиная">Свиная</option>
+            <option value="вегетарианская">Вегетарианская</option>
+        </select>
+        
+        <label>Размер:</label>
+        <select name="size" required>
+            <option value="стандарт">Стандарт</option>
+            <option value="большой">Большой</option>
+        </select>
+        
+        <label>Дополнительно:</label>
+        <textarea name="extras" rows="3" placeholder="Например: больше соуса, без лука..."></textarea>
+        
+        <label>Количество:</label>
+        <input type="number" name="quantity" value="1" min="1" required>
+        
+        <button type="submit">Заказать шаурму! 🚀</button>
+    </form>
+</body>
+</html>
